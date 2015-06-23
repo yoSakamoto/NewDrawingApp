@@ -15,6 +15,7 @@
 		90C943B21B3330C70036C314 /* DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C943B11B3330C70036C314 /* DrawingTests.swift */; };
 		90C943BC1B3331E30036C314 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C943BB1B3331E30036C314 /* DrawView.swift */; };
 		90C943BE1B3333BC0036C314 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C943BD1B3333BC0036C314 /* Line.swift */; };
+		90FD52471B36A0180080AF16 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD52461B36A0180080AF16 /* StampViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		90C943B11B3330C70036C314 /* DrawingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTests.swift; sourceTree = "<group>"; };
 		90C943BB1B3331E30036C314 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		90C943BD1B3333BC0036C314 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		90FD52461B36A0180080AF16 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				90C9439B1B3330C70036C314 /* AppDelegate.swift */,
 				90C9439D1B3330C70036C314 /* ViewController.swift */,
+				90FD52461B36A0180080AF16 /* StampViewController.swift */,
 				90C943BB1B3331E30036C314 /* DrawView.swift */,
 				90C943BD1B3333BC0036C314 /* Line.swift */,
 				90C9439F1B3330C70036C314 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 				90C943BE1B3333BC0036C314 /* Line.swift in Sources */,
 				90C9439C1B3330C70036C314 /* AppDelegate.swift in Sources */,
 				90C943BC1B3331E30036C314 /* DrawView.swift in Sources */,
+				90FD52471B36A0180080AF16 /* StampViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

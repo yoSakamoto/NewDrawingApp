@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     //描画エリア
     @IBOutlet var drawViewArea : DrawView!
+    
+    @IBOutlet var mainImageView :UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,15 +27,25 @@ class ViewController: UIViewController {
     
     //クリアボタンをタップされた時
     @IBAction func clearTapped() {
-        var theDrawView = drawViewArea as DrawView
+        var theDrawView = drawViewArea
         theDrawView.lines = []
         theDrawView.setNeedsDisplay()
+        mainImageView.image = nil
         
     }
     
+    @IBAction func back() {
+        
+        
+        
+    }
+    
+    
+    
+    
     //線色変換
     @IBAction func colorTapped(button:UIButton) {
-        var theDrawView = drawViewArea as DrawView
+        var theDrawView = drawViewArea
         var color: UIColor!
         if (button.titleLabel?.text == "Red") {
             color = UIColor.redColor()
@@ -51,5 +63,22 @@ class ViewController: UIViewController {
         
     }
     
+    //ライブラリから画像を読み込む
+    @IBAction func setImage() {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+            let controller = UIImagePickerController()
+            controller.delegate = self
+            controller.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.presentViewController(controller, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        if picker.sourceType == .PhotoLibrary {
+            self.mainImageView.image = image
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
 }
 
