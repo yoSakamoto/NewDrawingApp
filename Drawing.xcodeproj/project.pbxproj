@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9080DAFD1B3BF6470044E7E4 /* StampSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080DAFC1B3BF6470044E7E4 /* StampSelect.swift */; };
+		9080DB001B3D0FFA0044E7E4 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 9080DAFE1B3D0FFA0044E7E4 /* 9.png */; };
+		9080DB011B3D0FFA0044E7E4 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 9080DAFF1B3D0FFA0044E7E4 /* 10.png */; };
+		9090E22D1B3BA6D5005F4603 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E2271B3BA6D5005F4603 /* 1.png */; };
+		9090E22E1B3BA6D5005F4603 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E2281B3BA6D5005F4603 /* 2.png */; };
+		9090E22F1B3BA6D5005F4603 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E2291B3BA6D5005F4603 /* 3.png */; };
+		9090E2301B3BA6D5005F4603 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E22A1B3BA6D5005F4603 /* 4.png */; };
+		9090E2311B3BA6D5005F4603 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E22B1B3BA6D5005F4603 /* 5.png */; };
+		9090E2321B3BA6D5005F4603 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E22C1B3BA6D5005F4603 /* 6.png */; };
+		9090E2351B3BBDB9005F4603 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E2331B3BBDB9005F4603 /* 7.png */; };
+		9090E2361B3BBDB9005F4603 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9090E2341B3BBDB9005F4603 /* 8.png */; };
 		90C9439C1B3330C70036C314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C9439B1B3330C70036C314 /* AppDelegate.swift */; };
 		90C9439E1B3330C70036C314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C9439D1B3330C70036C314 /* ViewController.swift */; };
 		90C943A11B3330C70036C314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C9439F1B3330C70036C314 /* Main.storyboard */; };
@@ -29,6 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9080DAFC1B3BF6470044E7E4 /* StampSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampSelect.swift; sourceTree = "<group>"; };
+		9080DAFE1B3D0FFA0044E7E4 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		9080DAFF1B3D0FFA0044E7E4 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		9090E2271B3BA6D5005F4603 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		9090E2281B3BA6D5005F4603 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		9090E2291B3BA6D5005F4603 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		9090E22A1B3BA6D5005F4603 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		9090E22B1B3BA6D5005F4603 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		9090E22C1B3BA6D5005F4603 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		9090E2331B3BBDB9005F4603 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		9090E2341B3BBDB9005F4603 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 		90C943961B3330C60036C314 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C9439A1B3330C70036C314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90C9439B1B3330C70036C314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9090E2261B3BA698005F4603 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				9090E2271B3BA6D5005F4603 /* 1.png */,
+				9090E2281B3BA6D5005F4603 /* 2.png */,
+				9090E2291B3BA6D5005F4603 /* 3.png */,
+				9090E22A1B3BA6D5005F4603 /* 4.png */,
+				9090E22B1B3BA6D5005F4603 /* 5.png */,
+				9090E22C1B3BA6D5005F4603 /* 6.png */,
+				9090E2331B3BBDB9005F4603 /* 7.png */,
+				9090E2341B3BBDB9005F4603 /* 8.png */,
+				9080DAFE1B3D0FFA0044E7E4 /* 9.png */,
+				9080DAFF1B3D0FFA0044E7E4 /* 10.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		90C9438D1B3330C60036C314 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +125,7 @@
 				90C9439B1B3330C70036C314 /* AppDelegate.swift */,
 				90C9439D1B3330C70036C314 /* ViewController.swift */,
 				90FD52461B36A0180080AF16 /* StampViewController.swift */,
+				9080DAFC1B3BF6470044E7E4 /* StampSelect.swift */,
 				90C943BB1B3331E30036C314 /* DrawView.swift */,
 				90C943BD1B3333BC0036C314 /* Line.swift */,
 				90C9439F1B3330C70036C314 /* Main.storyboard */,
@@ -99,6 +139,7 @@
 		90C943991B3330C70036C314 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9090E2261B3BA698005F4603 /* image */,
 				90C9439A1B3330C70036C314 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -201,9 +242,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9080DB011B3D0FFA0044E7E4 /* 10.png in Resources */,
+				9090E2361B3BBDB9005F4603 /* 8.png in Resources */,
+				9090E22E1B3BA6D5005F4603 /* 2.png in Resources */,
 				90C943A11B3330C70036C314 /* Main.storyboard in Resources */,
 				90C943A61B3330C70036C314 /* LaunchScreen.xib in Resources */,
 				90C943A31B3330C70036C314 /* Images.xcassets in Resources */,
+				9090E2321B3BA6D5005F4603 /* 6.png in Resources */,
+				9090E2301B3BA6D5005F4603 /* 4.png in Resources */,
+				9090E2311B3BA6D5005F4603 /* 5.png in Resources */,
+				9090E2351B3BBDB9005F4603 /* 7.png in Resources */,
+				9080DB001B3D0FFA0044E7E4 /* 9.png in Resources */,
+				9090E22F1B3BA6D5005F4603 /* 3.png in Resources */,
+				9090E22D1B3BA6D5005F4603 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C9439E1B3330C70036C314 /* ViewController.swift in Sources */,
+				9080DAFD1B3BF6470044E7E4 /* StampSelect.swift in Sources */,
 				90C943BE1B3333BC0036C314 /* Line.swift in Sources */,
 				90C9439C1B3330C70036C314 /* AppDelegate.swift in Sources */,
 				90C943BC1B3331E30036C314 /* DrawView.swift in Sources */,

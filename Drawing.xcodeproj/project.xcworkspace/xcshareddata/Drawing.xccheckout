@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4C8448C6-E876-45EE-8BEF-6512228C57BD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Drawing</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>614F069D43BDEF2A986ECA1EC061F45E886EAF7E</key>
 		<string>https://github.com/yoSakamoto/DrawingApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Drawing.xcodeproj/project.xcworkspace</string>
+	<string>Drawing.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>614F069D43BDEF2A986ECA1EC061F45E886EAF7E</key>
