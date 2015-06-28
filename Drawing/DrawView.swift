@@ -26,6 +26,8 @@ class DrawView: UIView {
         let touch = touches.first as! UITouch
         lastPoint = touch.locationInView(self)
         
+        
+        
     }
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         let touch = touches.first as! UITouch

@@ -14,6 +14,7 @@ class StampSelect: UIImageView {
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.superview?.bringSubviewToFront(self)
         
+        
     }
     
     

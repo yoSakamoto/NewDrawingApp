@@ -136,6 +136,14 @@
                                     <action selector="setImage" destination="vXZ-lx-hvc" eventType="touchUpInside" id="68i-Nl-y3B"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJC-Kb-oBE">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="21"/>
+                                <color key="backgroundColor" red="0.85153346100000005" green="1" blue="0.32851163290000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.85153346100000005" green="1" blue="0.32851163290000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EO-7F-PjQ">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,6 +157,9 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="CwO-Eg-9pQ"/>
                                     <barButtonItem systemItem="reply" id="Wxd-zD-FsD">
                                         <color key="tintColor" red="0.98039215690000003" green="0.70588235290000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="undo" destination="vXZ-lx-hvc" id="RCv-99-smR"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="a3o-uc-CPH"/>
                                     <barButtonItem systemItem="trash" id="7dv-Ac-maR">
@@ -174,14 +185,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJC-Kb-oBE">
-                                <rect key="frame" x="0.0" y="-1" width="375" height="21"/>
-                                <color key="backgroundColor" red="0.85153346100000005" green="1" blue="0.32851163290000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.85153346100000005" green="1" blue="0.32851163290000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.85153346100000005" green="1" blue="0.32851163290000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -250,7 +253,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-HZ-cOa">
                                 <rect key="frame" x="0.0" y="598" width="375" height="69"/>
-                                <color key="backgroundColor" red="1" green="0.59452604441583468" blue="0.98979148716560172" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.55472656180000002" blue="0.5884786031" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="0.96482221781003785" blue="0.93248267273385632" alpha="1" colorSpace="calibratedRGB"/>

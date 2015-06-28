@@ -23,6 +23,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,7 +59,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         theDrawView.lines = []
         theDrawView.setNeedsDisplay()
         mainImageView.image = nil
-        
+        if canvasView.subviews.last is Drawing.StampSelect {
+            
+        }
     }
     
     
@@ -102,6 +105,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        
         if appDelegate.isNewStamAdded == true {
             let stamp = appDelegate.StampArray.last!
             stamp.frame = CGRectMake(0, 0, 100, 100)
@@ -113,15 +117,17 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     
     @IBAction func deleteTapped() {
-        if canvasView.subviews.count > 1 {
-            let lastStamp = canvasView.subviews.last! as AnyObject as! StampSelect
-            lastStamp.removeFromSuperview()
-            
-            if let index = find(appDelegate.StampArray, lastStamp) {
-                appDelegate.StampArray.removeAtIndex(index)
+        if canvasView.subviews.last is Drawing.StampSelect {
+            if canvasView.subviews.count > 1 {
+                let lastStamp = canvasView.subviews.last! as! StampSelect
+                lastStamp.removeFromSuperview()
+                
+                if let index = find(appDelegate.StampArray, lastStamp) {
+                    appDelegate.StampArray.removeAtIndex(index)
+                }
+                
             }
         }
-        
     }
     //Save機能
     @IBAction func saveTapped() {
@@ -143,5 +149,23 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         saveAlert.show()
     }
     
+    
+    
+    //Undo処理
+    @IBAction func undo() {
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
 }
-
