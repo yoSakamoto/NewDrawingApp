@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903650B31B427B8600A39CC1 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 903650B11B427B8600A39CC1 /* clear.png */; };
+		903650B41B427B8600A39CC1 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = 903650B21B427B8600A39CC1 /* library.png */; };
 		9080DAFD1B3BF6470044E7E4 /* StampSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080DAFC1B3BF6470044E7E4 /* StampSelect.swift */; };
 		9080DB001B3D0FFA0044E7E4 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 9080DAFE1B3D0FFA0044E7E4 /* 9.png */; };
 		9080DB011B3D0FFA0044E7E4 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 9080DAFF1B3D0FFA0044E7E4 /* 10.png */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		903650B11B427B8600A39CC1 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		903650B21B427B8600A39CC1 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
 		9080DAFC1B3BF6470044E7E4 /* StampSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampSelect.swift; sourceTree = "<group>"; };
 		9080DAFE1B3D0FFA0044E7E4 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		9080DAFF1B3D0FFA0044E7E4 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
@@ -84,9 +88,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9090E2261B3BA698005F4603 /* image */ = {
+		903650B01B427B6900A39CC1 /* imgae */ = {
 			isa = PBXGroup;
 			children = (
+				903650B11B427B8600A39CC1 /* clear.png */,
+				903650B21B427B8600A39CC1 /* library.png */,
 				9090E2271B3BA6D5005F4603 /* 1.png */,
 				9090E2281B3BA6D5005F4603 /* 2.png */,
 				9090E2291B3BA6D5005F4603 /* 3.png */,
@@ -98,7 +104,7 @@
 				9080DAFE1B3D0FFA0044E7E4 /* 9.png */,
 				9080DAFF1B3D0FFA0044E7E4 /* 10.png */,
 			);
-			name = image;
+			name = imgae;
 			sourceTree = "<group>";
 		};
 		90C9438D1B3330C60036C314 = {
@@ -122,6 +128,7 @@
 		90C943981B3330C60036C314 /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				903650B01B427B6900A39CC1 /* imgae */,
 				90C9439B1B3330C70036C314 /* AppDelegate.swift */,
 				90C9439D1B3330C70036C314 /* ViewController.swift */,
 				90FD52461B36A0180080AF16 /* StampViewController.swift */,
@@ -139,7 +146,6 @@
 		90C943991B3330C70036C314 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9090E2261B3BA698005F4603 /* image */,
 				90C9439A1B3330C70036C314 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -251,6 +257,8 @@
 				9090E2321B3BA6D5005F4603 /* 6.png in Resources */,
 				9090E2301B3BA6D5005F4603 /* 4.png in Resources */,
 				9090E2311B3BA6D5005F4603 /* 5.png in Resources */,
+				903650B31B427B8600A39CC1 /* clear.png in Resources */,
+				903650B41B427B8600A39CC1 /* library.png in Resources */,
 				9090E2351B3BBDB9005F4603 /* 7.png in Resources */,
 				9080DB001B3D0FFA0044E7E4 /* 9.png in Resources */,
 				9090E22F1B3BA6D5005F4603 /* 3.png in Resources */,

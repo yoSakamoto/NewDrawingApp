@@ -59,8 +59,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         theDrawView.lines = []
         theDrawView.setNeedsDisplay()
         mainImageView.image = nil
-        if canvasView.subviews.last is Drawing.StampSelect {
-            
+        if canvasView.subviews.count > 1{
+           
         }
     }
     
@@ -153,17 +153,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     //Undo処理
     @IBAction func undo() {
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
     }
