@@ -44,7 +44,7 @@ class DrawView: UIView {
     override func drawRect(rect: CGRect) {
         var context = UIGraphicsGetCurrentContext()
         CGContextSetLineCap(context, kCGLineCapRound)//線を滑らかにする
-        CGContextSetLineWidth(context, 5)
+        CGContextSetLineWidth(context, 10)
         
         for line in lines {
             CGContextBeginPath(context)

@@ -43,8 +43,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             color = UIColor.blueColor()
         } else if (button.titleLabel?.text == "Green") {
             color = UIColor.greenColor()
-        } else if (button.titleLabel?.text == "Yellow"){
-            color = UIColor.yellowColor()
+        } else if (button.titleLabel?.text == "Eraser"){
+            color = UIColor.whiteColor()
+
         }
         theDrawView.drawColor = color
         
@@ -60,7 +61,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         theDrawView.setNeedsDisplay()
         mainImageView.image = nil
         if canvasView.subviews.count > 1{
-           
+            
         }
     }
     
@@ -151,10 +152,5 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     
-    //Undo処理
-    @IBAction func undo() {
-        
-        
-    }
     
 }
