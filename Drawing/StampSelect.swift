@@ -11,15 +11,12 @@ import UIKit
 class StampSelect: UIImageView {
     
     //描画
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.superview?.bringSubviewToFront(self)
-        
-        
     }
     
-    
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-        let touch = touches.first as! UITouch
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        let touch = (touches.first!)
         let x = touch.locationInView(self.superview).x - touch.previousLocationInView(self.superview).x
         let y = touch.locationInView(self.superview).y - touch.previousLocationInView(self.superview).y
         self.center = CGPointMake(self.center.x + x, self.center.y + y)

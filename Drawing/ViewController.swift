@@ -18,6 +18,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBOutlet var canvasView : UIView!
     
     
+    
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
@@ -34,6 +35,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     //線色変換
     @IBAction func colorTapped(button:UIButton) {
         var theDrawView = drawViewArea
+
+
         var color: UIColor!
         if (button.titleLabel?.text == "Red") {
             color = UIColor.redColor()
@@ -44,7 +47,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         } else if (button.titleLabel?.text == "Green") {
             color = UIColor.greenColor()
         } else if (button.titleLabel?.text == "Eraser"){
-            color = UIColor.whiteColor()
+            color = UIColor(red: 1 , green: 1, blue: 1, alpha: 1)
 
         }
         theDrawView.drawColor = color
@@ -85,7 +88,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         }
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         
         if picker.sourceType == .PhotoLibrary {
@@ -95,7 +100,24 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             self.mainImageView.image = image
             self.dismissViewControllerAnimated(true, completion: nil)
         }
+
+        
     }
+    
+    
+    @IBAction func undo() {
+        
+    
+    }
+    @IBAction func redo() {
+        
+    }
+    
+    
+    
+    
+    
+    
     
     
     //スタンプ機能
@@ -123,10 +145,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
                 let lastStamp = canvasView.subviews.last! as! StampSelect
                 lastStamp.removeFromSuperview()
                 
-                if let index = find(appDelegate.StampArray, lastStamp) {
+                if let index = appDelegate.StampArray.indexOf(lastStamp) {
                     appDelegate.StampArray.removeAtIndex(index)
                 }
-                
             }
         }
     }
@@ -134,7 +155,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBAction func saveTapped() {
         UIGraphicsBeginImageContextWithOptions(canvasView.bounds.size, canvasView.opaque, 0.0)
         
-        canvasView.layer.renderInContext(UIGraphicsGetCurrentContext())
+        canvasView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
         
         let image = UIGraphicsGetImageFromCurrentImageContext()
         
@@ -149,8 +170,10 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         saveAlert.addButtonWithTitle("OK")
         saveAlert.show()
     }
+
+
     
-    
+
     
     
 }
